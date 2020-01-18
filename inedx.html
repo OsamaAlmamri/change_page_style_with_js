@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link id="link_lang" rel="stylesheet" href="arabic.css">
+
+</head>
+<body>
+
+<div class="slider-holder">
+    <span id="slider-image-1"></span>
+    <span id="slider-image-2"></span>
+    <span id="slider-image-3"></span>
+    <div class="image-holder">
+        <img src="1.jpg" class="slider-image" />
+        <img src="2.jpg" class="slider-image" />
+        <img src="3.jpg" class="slider-image" />
+    </div>
+    <div class="button-holder">
+        <a href="#slider-image-1" class="slider-change"></a>
+        <a href="#slider-image-2" class="slider-change"></a>
+        <a href="#slider-image-3" class="slider-change"></a>
+    </div>
+</div>
+
+<p id="name"> اسامة محمد </p>
+
+<button id="lang_arbic_btn" > Arabic</button>
+<button id="lang_english_btn" > English</button>
+<script>
+    var link_lang=document.getElementById('link_lang');
+    var Pname=document.getElementById('name');
+    var lang_english=document.getElementById('lang_english_btn');
+    var lang_arbic=document.getElementById('lang_arbic_btn');
+    lang_arbic.addEventListener('click',function () {
+        link_lang.setAttribute('href','arabic.css');
+        Pname.innerText=('اسامة محمد');
+
+    });
+    lang_english.addEventListener('click',function () {
+        link_lang.setAttribute('href','english.css');
+        Pname.innerText=('Osama Mohammed');
+
+    })
+
+
+</script>
+
+</body>
+</html>
